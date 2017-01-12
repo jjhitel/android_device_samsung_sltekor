@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
 ### SYSTEM
 ###########################################################
 
+# Samsung Doze
+PRODUCT_PACKAGES += \
+	SamsungDoze
+
 # This is needed by gpsd, mali etc. binary blobs
 PRODUCT_PACKAGES += \
 	libstlport
