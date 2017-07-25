@@ -233,7 +233,9 @@ CHARGING_ENABLED_PATH := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_VENDOR := samsung
 BOARD_PROVIDES_LIBRIL := true
 # hardware/samsung/ril
-BOARD_MODEM_TYPE := xmm7260
+BOARD_MODEM_TYPE := ss300
+BOARD_USES_SAMSUNGEXYNOS_RIL_CLASS := true
+BOARD_MODEM_NEEDS_VIDEO_CALL_FIELD := true
 # RIL.java overwrite
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
 # frameworks/native/libs/binder/Parcel.cpp
