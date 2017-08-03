@@ -261,7 +261,7 @@ BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BRGA_8888"
 TARGET_RECOVERY_DEVICE_MODULES += prebuilt_file_contexts
 
-TARGET_OTA_ASSERT_DEVICE := slteskt,slte,,slteskt
+TARGET_OTA_ASSERT_DEVICE := sltexx,slte,slteskt,sltektt
 
 ###########################################################
 ### TWRP RECOVERY
