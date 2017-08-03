@@ -1,9 +1,9 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/sltexx/BoardConfigVendor.mk
+-include vendor/samsung/slteskt/BoardConfigVendor.mk
 
-LOCAL_PATH := device/samsung/sltexx
+LOCAL_PATH := device/samsung/slteskt
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -47,7 +47,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
 #BOARD_KERNEL_SEPARATED_DT := true
 # Extracted with libbootimg
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/sltexx/dtb.img
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/slteskt/dtb.img
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 
@@ -261,7 +261,7 @@ BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BRGA_8888"
 TARGET_RECOVERY_DEVICE_MODULES += prebuilt_file_contexts
 
-TARGET_OTA_ASSERT_DEVICE := sltexx,slte,,slteskt
+TARGET_OTA_ASSERT_DEVICE := slteskt,slte,,slteskt
 
 ###########################################################
 ### TWRP RECOVERY

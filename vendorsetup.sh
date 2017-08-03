@@ -1,2 +1,2 @@
-add_lunch_combo lineage_sltexx-eng
-add_lunch_combo lineage_sltexx-userdebug
+add_lunch_combo lineage_slteskt-eng
+add_lunch_combo lineage_slteskt-userdebug

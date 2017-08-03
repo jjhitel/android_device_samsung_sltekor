@@ -1,8 +1,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, vendor/samsung/sltexx/sltexx-vendor.mk)
+$(call inherit-product, vendor/samsung/slteskt/slteskt-vendor.mk)
 
-LOCAL_PATH := device/samsung/sltexx
+LOCAL_PATH := device/samsung/slteskt
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 

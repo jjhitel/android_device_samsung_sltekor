@@ -50,7 +50,7 @@ Copyright (C) 2014-2017 Andreas Schneider <asn@cryptomilk.org>
       <project name="projects/android/android_hardware_samsung_slsi_exynos5430" path="hardware/samsung_slsi-cm/exynos5430" remote="cryptomilk" />
 
       <project name="projects/android/android_kernel_samsung_slte.git" path="kernel/samsung/slte" remote="cryptomilk" />
-      <project name="projects/android/android_device_samsung_sltexx.git" path="device/samsung/sltexx" remote="cryptomilk" />
+      <project name="projects/android/android_device_samsung_slteskt.git" path="device/samsung/slteskt" remote="cryptomilk" />
 
       <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" />
   </manifest>
@@ -60,7 +60,7 @@ Copyright (C) 2014-2017 Andreas Schneider <asn@cryptomilk.org>
   - Setup environment
 
   $ source build/envsetup.sh
-  $ lunch lineage_sltexx-userdebug
+  $ lunch lineage_slteskt-userdebug
 
 
   - Build LineageOS
