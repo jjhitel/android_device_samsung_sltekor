@@ -48,6 +48,8 @@ BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_SEPARATED_DT := true
 # Extracted with libbootimg
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/sltexx/dtb.img
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00a00000
