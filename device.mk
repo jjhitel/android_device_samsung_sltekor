@@ -252,7 +252,6 @@ PRODUCT_PACKAGES += \
 	Snap
 
 PRODUCT_PACKAGES += \
-	camera.universal5430 \
 	libhwjpeg \
 	libshim_camera
 
