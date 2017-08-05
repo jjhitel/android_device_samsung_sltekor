@@ -202,7 +202,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.legacyencoder=1 \
-    media.stagefright.less-secure=1
+    media.stagefright.less-secure=1 \
+	ro.sapa.jack.master=alsa \
+	ro.hdcp2.rx=tz \
+    persist.bluetooth.disableabsvol=true
 
 ###########################################################
 ### POWER
