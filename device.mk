@@ -56,8 +56,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
-    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
-    frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
 
 ###########################################################
@@ -95,7 +94,7 @@ PRODUCT_PACKAGES += \
 ### RADIO
 ###########################################################
 
-# cpboot-daemon for ss330 modem
+# cpboot-daemon for xmm7260 modem
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/ril/sbin/cbd:system/bin/cbd
 

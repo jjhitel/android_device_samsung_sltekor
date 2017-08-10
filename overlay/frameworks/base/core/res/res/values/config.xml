@@ -327,9 +327,6 @@
          Otherwise, the buttons will light up whenever the user interacts with the device. -->
     <bool name="config_buttonLightOnKeypressOnly">true</bool>
 
-    <!-- The device supports freeform window management -->
-    <bool name="config_freeformWindowManagement">true</bool>
-
     <!-- Values for GPS configuration -->
     <string-array translatable="false" name="config_gpsParameters">
         <item>XTRA_SERVER_1=http://xtrapath1.izatcloud.net/xtra3grc.bin</item>
