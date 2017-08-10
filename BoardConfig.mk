@@ -60,9 +60,11 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linaro-linux-androideabi-7.1.1/bin
 #TARGET_PREBUILT_KERNEL := device/samsung/slte/kernel
 TARGET_KERNEL_CONFIG := cm_exynos5430-slteskt_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/slte
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linaro-linux-androideabi-
 # hardware/samsung_slsi/exynos/libhdmi_legacy
 TARGET_LINUX_KERNEL_VERSION := 3.10
 
