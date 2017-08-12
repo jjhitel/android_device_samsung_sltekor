@@ -18,6 +18,7 @@ ro.telephony.ril_class=SlteRIL
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.ril.telephony.mqanelements=6
+ro.telephony.default_network=0
 
 # netmgrd should be false in EVO-RIL model
 ro.use_data_netmgrd=false
@@ -33,8 +34,10 @@ persist.radio.apm_sim_not_pwdn=1
 persist.radio.sib16_support=0
 
 #
-# HWC
+# Graphics
 #
+ro.bq.gpu_to_cpu_unsupported=1
+debug.hwc.force_gpu=1
 debug.hwc.winupdate=1
 debug.hwc.otf=1
 
@@ -56,8 +59,12 @@ ro.hwui.text_large_cache_height=1024
 #
 # StageFright
 #
+camera2.portability.force_api=1
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
+
+# WiFi Display
+wlan.wfd.hdcp=disable
 
 # AUDIO
 audio_hal.force_voice_config=wide

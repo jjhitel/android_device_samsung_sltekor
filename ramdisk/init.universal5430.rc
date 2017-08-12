@@ -9,9 +9,10 @@ on early-init
 on init
     export LD_SHIM_LIBS "/system/lib/libexynoscamera.so|libshim_camera.so:/system/bin/gpsd|libshim_gpsd.so"
 
+# RIL <-> audioserver comm
+    chmod 0644 /proc/cmdline
+
     symlink /sdcard /storage/sdcard0
-    symlink /sdcard1 /storage/sdcard1
-    symlink /sdcard1 /external_sd
 
     symlink /data/app /factory
 
@@ -19,10 +20,6 @@ on init
 
 # Support Preload install apks
     mkdir /preload 0771 system system
-
-#Private Mode
-    mkdir /mnt/shell/privatemode 0700 system system
-    mkdir /storage/Private 0000 system system
 
 # Make param link
     symlink /dev/block/mmcblk0p8 /dev/block/param
@@ -838,6 +835,10 @@ service watchdogd /sbin/watchdogd 10 20
 on property:ro.debug_level=0x4f4c
     start watchdogd
 
+# LPM
+on property:ro.bootmode=charger
+    mount auto /dev/block/mmcblk0p18 /system wait ro
+
 # GPS
 service gpsd /system/bin/gpsd -c /system/etc/gps.xml
     class main
@@ -868,16 +869,10 @@ on charger
 # Do not set any USB mode while charging
     setprop sys.usb.config charging
 
-service charger /charger
-    seclabel u:r:healthd:s0
+service charger /sbin/healthd -c
     class charger
-
-on property:ro.securestorage.support=true
-    mkdir /dev/.secure_storage
-    chmod 0711 /dev/.secure_storage
-    chown system system /dev/.secure_storage
-    restorecon -R /dev/.secure_storage
-    start secure_storage
+	critical
+    seclabel u:r:healthd:s0
 
 # CS service
 service cs_service /system/bin/cs

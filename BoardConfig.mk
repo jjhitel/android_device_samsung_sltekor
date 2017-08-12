@@ -134,6 +134,9 @@ BOARD_USES_FIMGAPI_V4L2 := false
 # GSC
 #BOARD_USES_ONLY_GSC0_GSC1 := true
 
+# Samsung Gralloc
+TARGET_SAMSUNG_GRALLOC_EXTERNAL_USECASES := true
+
 # SCREEN CASTING
 BOARD_USES_WFD := true
 
@@ -167,17 +170,17 @@ BOARD_USE_ALP_AUDIO := true
 BOARD_USE_SEIREN_AUDIO := true
 
 # WIFI
+BOARD_HAVE_SAMSUNG_WIFI := true
+BOARD_WLAN_DEVICE                := bcmdhd
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 BOARD_HOSTAPD_DRIVER             := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_bcmdhd
-BOARD_WLAN_DEVICE                := bcmdhd
 WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/dhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA          := "/system/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP           := "/system/etc/wifi/bcmdhd_apsta.bin"
 # MACLOADER
-BOARD_HAVE_SAMSUNG_WIFI := true
 
 # BLUETOOTH
 BOARD_HAVE_BLUETOOTH := true
@@ -199,8 +202,8 @@ TARGET_GLOBAL_CFLAGS += -DSAMSUNG_CAMERA_HARDWARE
 TARGET_GLOBAL_CFLAGS += -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
 # frameworks/av/media/libstagefright
 TARGET_GLOBAL_CFLAGS += -DUSE_NATIVE_SEC_NV12TILED
-BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
 # frameworks/av/{cameraserver,libstagefright,mediaserver}
+BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 ### AUDIO
@@ -210,11 +213,12 @@ TARGET_AUDIOHAL_VARIANT := samsung
 TARGET_POWERHAL_VARIANT := samsung
 
 ### CHARGER
-WITH_CM_CHARGER := true
+BOARD_CHARGER_ENABLE_SUSPEND := true
 # system/core/init/Android.mk
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
-# system/core/healthd/Android.mk
+BOARD_BATTERY_DEVICE_NAME := battery
 BOARD_CHARGER_SHOW_PERCENTAGE := true
+# system/core/healthd/Android.mk
 RED_LED_PATH := "/sys/class/leds/led_r/brightness"
 GREEN_LED_PATH := "/sys/class/leds/led_g/brightness"
 BLUE_LED_PATH := "/sys/class/leds/led_b/brightness"
