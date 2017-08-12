@@ -5,7 +5,6 @@
 /system_image  emmc      /dev/block/mmcblk0p18
 /system        auto      /dev/block/mmcblk0p18
 /data          auto      /dev/block/mmcblk0p21         length=-16384
-/preload       ext4      /dev/block/mmcblk0p20
-/external_sd   vfat      /dev/block/mmcblk1p1          flags=display="Micro SDcard";storage;wipeingui;removable
+/preload       ext4      /dev/block/mmcblk0p2
 /modem         emmc      /dev/block/mmcblk0p13         flags=backup=1;display="Modem"
 /usbstorage    vfat      /dev/block/sda1 /dev/block/sda flags=display="USB Storage";storage;removable;wipeingui
