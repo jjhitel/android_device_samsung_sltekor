@@ -3,8 +3,8 @@
 #
 ro.product.model=SM-G850S
 ro.product.brand=samsung
-ro.product.name=slteskt
-ro.product.device=slteskt
+ro.product.name=sltekor
+ro.product.device=sltekor
 
 ro.sf.lcd_density=320
 

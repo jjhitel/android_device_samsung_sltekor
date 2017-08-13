@@ -1,9 +1,9 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/slteskt/BoardConfigVendor.mk
+-include vendor/samsung/sltekor/BoardConfigVendor.mk
 
-LOCAL_PATH := device/samsung/slteskt
+LOCAL_PATH := device/samsung/sltekor
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -50,7 +50,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
 #BOARD_KERNEL_SEPARATED_DT := true
 # Extracted with libbootimg
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/slteskt/dtb.img
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/sltekor/dtb.img
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 
@@ -65,7 +65,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linaro-linux-androideabi-7.1.1/bin
 #TARGET_PREBUILT_KERNEL := device/samsung/slte/kernel
-TARGET_KERNEL_CONFIG := cm_exynos5430-slteskt_defconfig
+TARGET_KERNEL_CONFIG := cm_exynos5430-sltekor_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/slte
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linaro-linux-androideabi-
 # hardware/samsung_slsi/exynos/libhdmi_legacy
@@ -246,7 +246,7 @@ EXTENDED_FONT_FOOTPRINT := true
 
 ### CMHW
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
-BOARD_HARDWARE_CLASS += device/samsung/slteskt/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/sltekor/cmhw
 
 ### SELINUX
 BOARD_SEPOLICY_DIRS := \
@@ -268,7 +268,7 @@ BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BRGA_8888"
 TARGET_RECOVERY_DEVICE_MODULES += prebuilt_file_contexts
 
-TARGET_OTA_ASSERT_DEVICE := sltexx,slte,slteskt,sltektt
+TARGET_OTA_ASSERT_DEVICE := sltexx,slte,sltekor,slteskt,sltektt,sltelgt
 
 ###########################################################
 ### TWRP RECOVERY
