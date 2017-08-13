@@ -39,6 +39,9 @@ ifeq ($(HOST_OS),linux)
 endif
 WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 
+# INIT
+TARGET_INIT_VENDOR_LIB := libinit_sec
+
 # BOOT
 TARGET_BOOTLOADER_BOARD_NAME := universal5430
 
