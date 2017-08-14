@@ -252,7 +252,6 @@ PRODUCT_PACKAGES += \
 	Snap
 
 PRODUCT_PACKAGES += \
-	libhwjpeg \
 	libshim_camera
 
 ###########################################################
