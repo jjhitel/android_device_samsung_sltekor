@@ -804,6 +804,10 @@ on fs
 # Fingerprint
     mkdir /dev/validity 0770 system system
 
+# Permissions for ION
+    chmod 0660 /sys/class/ion_cma/ion_video/isolated
+    chmod system system /sys/class/ion_cma/ion_video/isolated
+
 # Copy DRM Key
     copy /system/app/wv.keys /factory/wv.keys
 
