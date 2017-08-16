@@ -32,7 +32,7 @@ allow system_server fimg2d_video_device:chr_file rw_file_perms;
 allow system_server debugfs:dir r_dir_perms;
 allow system_server debugfs:file r_file_perms;
 
-# mDNIE
-allow system_server sysfs_mdnie_writable:lnk r_file_perms;
-allow system_server sysfs_mdnie_writable:dir r_dir_perms;
-allow system_server sysfs_mdnie_writable:file r_file_perms;
+# mDNIe
+allow system_server sysfs_mdnie_writable:lnk rw_file_perms;
+allow system_server sysfs_mdnie_writable:dir rw_dir_perms;
+allow system_server sysfs_mdnie_writable:file rw_file_perms;
