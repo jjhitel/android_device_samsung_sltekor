@@ -103,7 +103,20 @@
 /dev/mobicore-user        0666   radio     	system
 
 # Secure MEM driver
-/dev/s5p-smem             0660   system     system
+/dev/s5p-smem             0660   drm     drmrpc
 
-#SysScope
+# Interactive governor parameters
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/above_hispeed_delay         0664   system  system
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/boost                       0664   system  system
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/boostpulse                  0664   system  system
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/boostpulse_duration         0664   system  system
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/go_hispeed_load             0664   system  system
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/hispeed_freq                0664   system  system
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/io_is_busy                  0664   system  system
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/min_sample_time             0664   system  system
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/target_loads                0664   system  system
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/timer_rate                  0664   system  system
+/sys/devices/system/cpu/cpu*   cpufreq/interactive/timer_slack                 0664   system  system
+
+# SysScope
 /dev/block/mmcblk0p8      0660   system     system
