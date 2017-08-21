@@ -67,7 +67,7 @@ media.stagefright.less-secure=true
 wlan.wfd.hdcp=disable
 
 # AUDIO
-audio_hal.force_voice_config=wide
+af.fast_track_multiplier=1
 
 # ART
 # use 4 threads for dex2oat
