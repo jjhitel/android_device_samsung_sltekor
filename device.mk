@@ -99,6 +99,8 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/ril/sbin/cbd:system/bin/cbd
 
 PRODUCT_PACKAGES += \
+    libxml2 \
+    libprotobuf-cpp-full \
     libsecril-client \
     libsecril-client-sap
 

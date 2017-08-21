@@ -18,7 +18,7 @@ ro.telephony.ril_class=SlteRIL
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.ril.telephony.mqanelements=6
-ro.telephony.default_network=0
+ro.telephony.default_network=9
 
 # netmgrd should be false in EVO-RIL model
 ro.use_data_netmgrd=false
@@ -26,6 +26,7 @@ ro.use_data_netmgrd=false
 persist.data.netmgrd.qos.enable=false
 ro.data.large_tcp_window_size=true
 # System prop to turn on CdmaLTEPhone always
+telephony.lteOnGsmDevice=1
 telephony.lteOnCdmaDevice=0
 # System proverty for sys info indication
 persist.radio.add_power_save=1
