@@ -71,6 +71,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libstlport
 
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.sys.sdcardfs=1
+
 ###########################################################
 ### GRAPHICS
 ###########################################################
