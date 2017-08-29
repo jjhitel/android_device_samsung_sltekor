@@ -64,7 +64,7 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linaro-linux-androideabi-7.1.1/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linaro-linux-androideabi-7.2.1/bin
 #TARGET_PREBUILT_KERNEL := device/samsung/slte/kernel
 TARGET_KERNEL_CONFIG := cm_exynos5430-sltekor_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/slte
