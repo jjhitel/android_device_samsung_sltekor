@@ -20,7 +20,6 @@ ro.ril.needs_videocall_field=true
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.ril.telephony.mqanelements=6
-ro.telephony.default_network=9
 
 # netmgrd should be false in EVO-RIL model
 ro.use_data_netmgrd=false
