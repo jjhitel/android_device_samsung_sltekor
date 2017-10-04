@@ -1,4 +1,4 @@
-# Inherit some common LineageOS stuff.
+# Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
