@@ -63,21 +63,22 @@ void vendor_load_properties()
         property_override("ro.product.model", "SM-G850K");
         property_override("ro.product.name", "sltektt");
         property_override("ro.product.device", "sltektt");
-    } else if (bootloader.find("G850S") != std::string::npos) {
-	/* SM-G850S */
-        property_override("ro.product.model", "SM-G850S");
-        property_override("ro.product.name", "slteskt");
-        property_override("ro.product.device", "slteskt");
+        property_override("ro.build.description", "sltektt-user 5.0.2 LRX22G G850KKTU2CQA2 release-keys");
+        property_override("ro.build.fingerprint", "samsung/sltektt/sltektt:5.0.2/LRX22G/G850KKTU2CQA2:release-keys");
     } else if (bootloader.find("G850L") != std::string::npos) {
 	/* SM-G850L */
         property_override("ro.product.model", "SM-G850L");
         property_override("ro.product.name", "sltelgt");
         property_override("ro.product.device", "sltelgt");
+        property_override("ro.build.description", "sltelgt-user 5.0.2 LRX22G G850LKLU2CPJ1 release-keys");
+        property_override("ro.build.fingerprint", "samsung/sltelgt/sltelgt:5.0.2/LRX22G/G850LKLU2CPJ1:release-keys");
     } else {
-	/* SM-G850F */
-        property_override("ro.product.model", "SM-G850F");
-        property_override("ro.product.name", "sltexx");
-        property_override("ro.product.device", "slte");
+	/* SM-G850S */
+        property_override("ro.product.model", "SM-G850S");
+        property_override("ro.product.name", "slteskt");
+        property_override("ro.product.device", "slteskt");
+        property_override("ro.build.description", "slteskt-user 5.0.2 LRX22G G850SKSU2CPJ1 release-keys");
+        property_override("ro.build.fingerprint", "samsung/slteskt/slteskt:5.0.2/LRX22G/G850SKSU2CPJ1:release-keys");
     }
 
 	std::string device = property_get("ro.product.device");
